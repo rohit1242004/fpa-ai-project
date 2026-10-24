@@ -1,7 +1,6 @@
 streamlit
-langchain
-langchain-community
+langchain==0.2.14
+langchain-community==0.2.10
 langchain-google-genai
 faiss-cpu
 pypdf
-# force fresh install
