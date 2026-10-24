@@ -35,7 +35,7 @@ if uploaded_file:
         retriever = process_pdf(temp_path)
     
     # Initialize the AI Model
-   llm = ChatGoogleGenerativeAI(model="gemini-2.5-flash")
+    llm = ChatGoogleGenerativeAI(model="gemini-2.5-flash")
     
     # Define the FP&A instructions
     prompt = ChatPromptTemplate.from_messages([
