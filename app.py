@@ -19,7 +19,7 @@ os.environ["GOOGLE_API_KEY"] = st.secrets["GOOGLE_API_KEY"]
 def process_pdf(file_path):
     loader = PyPDFLoader(file_path)
     pages = loader.load_and_split()
-    embeddings = GoogleGenerativeAIEmbeddings(model="models/embedding-001")
+    embeddings = GoogleGenerativeAIEmbeddings(model="models/text-embedding-004")
     vector_store = FAISS.from_documents(pages, embeddings)
     return vector_store.as_retriever()
 
